@@ -17,6 +17,7 @@ jobs:
         env:
           CLUSTER: dev-gcp
           RESOURCE: .nais/nais.yml
+          VARS: .nais/vars/dev.yml
 
   deploy-prod:
     name: Deploy to NAIS prod
@@ -28,3 +29,4 @@ jobs:
         env:
           CLUSTER: prod-gcp
           RESOURCE: .nais/nais.yml
+          VARS: .nais/vars/prod.yml
