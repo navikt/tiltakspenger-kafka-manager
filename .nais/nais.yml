@@ -10,7 +10,7 @@ spec:
   port: 8080
   webproxy: true
   ingresses:
-    - {{ ingress }}
+    - {{ ingress.url }}
   prometheus:
     enabled: true
     path: /internal/prometheus
