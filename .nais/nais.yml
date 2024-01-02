@@ -34,7 +34,7 @@ spec:
   azure: # Required
     application:
       enabled: true
-      tenant: nav.no
+      tenant: {{ azure.tenant }}
       claims:
         groups:
           - id: {{ ROLE_DRIFT }} # Required for authorization

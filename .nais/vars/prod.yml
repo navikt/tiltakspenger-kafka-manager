@@ -2,4 +2,6 @@ ingress:
   url: https://tiltakspenger-kafka-manager.intern.nav.no
 kafka:
   pool: nav-prod
+azure:
+  tenant: nav.no
 ROLE_DRIFT: 0405ed09-1248-47f7-a6e3-e998bc90feca
