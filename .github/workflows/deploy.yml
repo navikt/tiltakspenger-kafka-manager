@@ -2,10 +2,6 @@ name: Build, push, and deploy
 
 on: push
 
-env:
-  IMAGE: ghcr.io/${{ github.repository }}:${{ github.sha }}
-  PRINT_PAYLOAD: true
-
 permissions:
   id-token: write
   contents: read
