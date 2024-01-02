@@ -10,7 +10,7 @@ spec:
   port: 8080
   webproxy: true
   ingresses:
-    - {{ingress.url}}
+    - {{ ingress.url }}
   prometheus:
     enabled: true
     path: /internal/prometheus
@@ -37,7 +37,7 @@ spec:
       tenant: nav.no
       claims:
         groups:
-          - id: {{ROLE_DRIFT}} # Required for authorization
+          - id: {{ ROLE_DRIFT }} # Required for authorization
   kafka: # Optional. Required for Aiven
     pool: {{kafka.pool}}
   env:
