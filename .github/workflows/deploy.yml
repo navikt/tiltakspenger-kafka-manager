@@ -7,7 +7,7 @@ env:
   PRINT_PAYLOAD: true
 
 permissions:
-  id-token: read
+  id-token: write
 
 jobs:
   deploy-dev:
