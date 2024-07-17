@@ -19,14 +19,14 @@ jobs:
           RESOURCE: .nais/nais.yml
           VARS: .nais/vars/dev.yml
 
-  deploy-prod:
-    name: Deploy to NAIS prod
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: nais/deploy/actions/deploy@v2
-        env:
-          CLUSTER: prod-gcp
-          RESOURCE: .nais/nais.yml
-          VARS: .nais/vars/prod.yml
+#  deploy-prod:
+#    name: Deploy to NAIS prod
+#    if: github.ref == 'refs/heads/main'
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: nais/deploy/actions/deploy@v2
+#        env:
+#          CLUSTER: prod-gcp
+#          RESOURCE: .nais/nais.yml
+#          VARS: .nais/vars/prod.yml
